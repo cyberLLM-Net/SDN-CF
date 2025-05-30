@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * Helpers functions for the HTTP DDos Detector
+ * Helpers functions 
  */
 public class Helpers {
 
