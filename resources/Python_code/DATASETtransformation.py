@@ -22,19 +22,16 @@ np_random_seed = 2
 np.random.seed(2)
 
 # Loading the datasets separately
-dataset_ovs = pd.read_csv(r"C:\Users\oscar\Desktop\TFM\visual\Tests\TFG\Dataset\InSDN_DatasetCSV\OVS.csv")
-print("Number of rows in ovs")
-print(len(dataset_ovs.index))
-dataset_metasploit = pd.read_csv(r"C:\Users\oscar\Desktop\TFM\visual\Tests\TFG\Dataset\InSDN_DatasetCSV\metasploitable-2.csv")
-print("Number of rows in metasploit")
+dataset_metasploit = pd.read_csv(r"Dataset\metasploitable-2.csv")
+print("Number of rows in the Metasploit dataset containing anomalous data")
 print(len(dataset_metasploit.index))
-dataset_normalData = pd.read_csv(r"C:\Users\oscar\Desktop\TFM\visual\Tests\TFG\Dataset\InSDN_DatasetCSV\Normal_data.csv")
+dataset_normalData = pd.read_csv(r"Dataset\normal_data.csv")
 print("Number of rows in normal data")
 print(len(dataset_normalData.index))
 print("Data loaded")
 
 # Merging the 3 datasets into a single one
-dataset = [dataset_metasploit, dataset_normalData, dataset_ovs]
+dataset = [dataset_metasploit, dataset_normalData]
 dataset_total = pd.concat(dataset, ignore_index=True)
 print("Number of merged rows")
 print(len(dataset_total.index))
