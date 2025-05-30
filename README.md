@@ -4,8 +4,6 @@
 
 In the `*/onoscf*` folder, you will find the Java project for the SDN application deployed on the ONOS Controller. This application is responsible for detecting and blocking malicious network traffic.
 
-## Class Model
-
 The source code is structured into cohesive Java packages, each dedicated to a specific functionality within the application. The following components represent the main building blocks of the class model:
 
 - **`FlowKey`, `FlowData`**: These classes handle the identification and characterization of network flows. They model the essential attributes of a flow (e.g., source and destination IP addresses, ports, and protocols) and provide the data structures used throughout the processing pipeline.
